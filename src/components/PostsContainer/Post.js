@@ -9,7 +9,8 @@ import "./Posts.css";
 // pass props in this file to
 const Post = props => {
   // set up state for the likes
-  const [userLike, postLike]=useState('')
+  const [userLike, postLike]=useState(0)
+  //console.log('check')
 
   return (
     <div className="post-border">
