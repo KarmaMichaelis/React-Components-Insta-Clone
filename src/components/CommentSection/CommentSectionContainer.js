@@ -13,7 +13,7 @@ const CommentSection = props => {
     <div>
       {/* map through the comments data and return the Comment component */}
       
-      {comments.map ()}
+      {comments.map (commentsObj=><Comment key={commentsObj.id} comment={commentsObj}/> )}
       
     </div>
   );
